@@ -7,7 +7,6 @@ library(data.table)
 if (!require("dplyr")) install.packages("dplyr")
 library(dplyr)
 
-
 ## set some defaults
 options(tab.width = 4)
 options(width=105)
@@ -103,5 +102,4 @@ names(data_mean_sd) <- new_names
 ## 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 tidy_data <- aggregate(data_mean_sd[,3:81], by = list(activity = data_mean_sd$activity, subject = data_mean_sd$subject),FUN = mean)
 write.table(x = tidy_data, file = "tidy_data.txt", row.names = FALSE)
-
 
