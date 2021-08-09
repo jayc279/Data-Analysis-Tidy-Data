@@ -94,7 +94,6 @@ sensors.
 -   [Smartlab](www.smartlab.ws)
 
 ### License:
-
 Use of this dataset in publications must be acknowledged by referencing
 the following publication (1)
 
